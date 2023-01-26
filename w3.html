@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+    box-sizing: border-box;
+    }
+    body{
+      font-family: "DejaVu Sans";
+    }
+    /* style the header */
+    header{
+      background-color: cyan;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav{
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: darkseagreen;
+      padding: 20px;
+    }
+    iframe{
+      width: 400px;
+      height: 300px;
+    }
+    nav ul{
+      list-style-type: none;
+      padding: 0px;
+    }
+    article{
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: white;
+      height: 300px;
+    }
+    section{
+      content: open-quote;
+      display: table;
+      clear: left;
+    }
+    footer{
+      background-color: gray;
+      padding: 10px;
+      text-align: center;
+      color: white;}
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+   @media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  </style>
+  <link rel="stylesheet" href="css/Styles.css">
+</head>
+<body>
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the effect.</p>
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="">London</a></li>
+      <li><a href="">Paris</a></li>
+      <li><a href="">Tokyo</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+    <img src="img/london.jpeg" alt="">
+  </article>
+</section>
+<P>This is the location of London</P>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.7119404761!2d-0.38178643357976116!3d51.52873519553976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2ske!4v1674123278795!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<nav>
+  <ul>
+    <li>Youtube</li>
+    <li>TikTok</li>
+    <li>Google</li>
+  </ul>
+</nav>
+<footer>
+  <p><a href="https://www.google.com/search?client=firefox-b-lm&q=visit+london">Visit London</a></p>
+</footer>
+</body>
+</html>
